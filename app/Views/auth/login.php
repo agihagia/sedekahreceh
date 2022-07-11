@@ -10,7 +10,7 @@
                 <h2 class="mb-3"><?= $instansi ?></h2>
             </div>
             <h2 class="mb-3">Login</h2>
-            <h5 class="fw-normal mb-3">Masuk untuk memulai sesi anda</h5>
+            <h5 class="fw-normal mb-3">Masuk untuk BerSedekah</h5>
 
             <?php if (session()->getFlashdata('pesan')) : ?>
                 <div class="alert alert-danger" role="alert">

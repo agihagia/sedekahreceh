@@ -103,7 +103,44 @@ class Auth extends BaseController
                 ]
             ],
             'password' => [
-                'rules' => 'required|min_length[6]|max_length[50]',
+                'rules' => 'required|min_length[8]|max_length[15]',
+                'errors' => [
+                    'required' => 'Field {field} harus diisi!',
+                ]
+            ],
+            'confirm_password' => [
+                'rules' => 'required|matches[password]',
+                'errors' => [
+                    'required' => 'Field {field} harus diisi!',
+                ]
+            ],
+            'email' => [
+                'rules' => 'required|valid_email|is_unique[users.email]',
+                'errors' => [
+                    'required' => 'Field {field} harus diisi!',
+                    'is_unique' => 'Field {field} sudah terdaftar.'
+                ]
+            ],
+            'tgl_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Field {field} harus diisi!',
+                ]
+            ],
+            'telp' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Field {field} harus diisi!',
+                ]
+            ],
+            'provinsi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Field {field} harus diisi!',
+                ]
+            ],
+            'kota' => [
+                'rules' => 'required',
                 'errors' => [
                     'required' => 'Field {field} harus diisi!',
                 ]
@@ -114,13 +151,7 @@ class Auth extends BaseController
                     'required' => 'Field {field} harus diisi!',
                 ]
             ],
-            'rt' => [
-                'rules' => 'required',
-                'errors' => [
-                    'required' => 'Field {field} harus diisi!',
-                ]
-            ],
-            'rw' => [
+            'instagram' => [
                 'rules' => 'required',
                 'errors' => [
                     'required' => 'Field {field} harus diisi!',
@@ -157,9 +188,15 @@ class Auth extends BaseController
             'nama' => $nama,
             'username' => $this->request->getVar('username'),
             'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+            'email' => $this->request->getVar('email'),
+            'gender' => $this->request->getVar('gender'),
+            'provinsi' => $this->request->getVar('provinsi'),
+            'kota' => $this->request->getVar('kota'),
             'alamat' => $this->request->getVar('alamat'),
-            'rt' => $this->request->getVar('rt'),
-            'rw' => $this->request->getVar('rw'),
+            'tgl_lahir' => $this->request->getVar('tgl_lahir'),
+            'telp' => $this->request->getVar('telp'),
+            'instagram' => $this->request->getVar('instagram'),
+            'telegram' => $this->request->getVar('telegram'),
             'foto' => $namaFoto,
             'level' => 'user',
             'saldo' => '0',

@@ -58,7 +58,7 @@
 				<div class="container">
 					<h4 class="fw-normal mb-3">Sedekah Recehnya di sini,Sedekah gedenya di mana-mana</h4>
 					<h4 class="fw-normal mb-3">Yang penting ISTIQOMAH</h4>
-					<h4 class="fw-normal mb-3">Eksekusi berjamaah, Meski seribu ajah :)</h4>
+					<h4 class="fw-normal mb-3">Eksekusi berjamaah, Meski seribu ajah</h4>
 					<br>
 					<a href="#" class="btn btn-outline-success"><i class="mdi mdi-account-check-outline"></i> Mulai Sedekah</a>
 					<!-- <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a> -->
@@ -68,10 +68,57 @@
 	</section><!-- End Hero -->
 
 	<main id="main">
+				<!-- ======= Tujuan Section ======= -->
+				<section id="tujuan" class="py-4">
+			<div class="container">
+			<div class="text-center">
+					<h1>Sedekah Receh</h1>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="200">
+						<div class="card mb-0">
+							<div class="card-body">
+								<div class="text-start"><i class="mdi mdi-heart mdi-48px text-success"></i></div>
+								<h4>Berbagi</h4>
+								<h6></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="400">
+						<div class="card">
+							<div class="card-body">
+								<div class="text-start"><i class="mdi mdi-elevation-rise mdi-48px text-warning"></i></div>
+								<h4>Konsistensi</h4>
+								<h6></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="500">
+						<div class="card">
+							<div class="card-body">
+								<div class="text-start"><i class="mdi mdi-account-check mdi-48px text-info"></i></div>
+								<h4>Komunitas</h4>
+								<h6></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="300">
+						<div class="card">
+							<div class="card-body">
+								<div class="text-start"><i class="mdi mdi-target mdi-48px text-danger"></i></div>
+								<h4>Akurat</h4>
+								<h6></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- End App Features Section -->
 		<section id="jenis" class="py-4">
 			<div class="container">
 				<div class="text-center">
-					<h1>Program</h1>
+					<h1>Realisasi Program</h1>
 					<h4>Sedekah Receh</h4>
 				</div>
 				<br />
@@ -106,56 +153,12 @@
 				<?php } ?>
 			</div>
 		</section>
-				<!-- ======= Tujuan Section ======= -->
-				<section id="tujuan" class="py-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="200">
-						<div class="card mb-0">
-							<div class="card-body">
-								<div class="text-start"><i class="mdi mdi-recycle mdi-48px text-success"></i></div>
-								<h4>Ramah Lingkungan</h4>
-								<h6>Dengan daur ulang sedekah</h6>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="400">
-						<div class="card">
-							<div class="card-body">
-								<div class="text-start"><i class="mdi mdi-elevation-rise mdi-48px text-warning"></i></div>
-								<h4>Dapatkan Income</h4>
-								<h6>Tukarkan sedekah jadi Rupiah</h6>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="500">
-						<div class="card">
-							<div class="card-body">
-								<div class="text-start"><i class="mdi mdi-account-check mdi-48px text-info"></i></div>
-								<h4>Keanggotaan</h4>
-								<h6>Member dan Transparansi Saldo Anda</h6>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="300">
-						<div class="card">
-							<div class="card-body">
-								<div class="text-start"><i class="mdi mdi-check-decagram mdi-48px text-danger"></i></div>
-								<h4>Keamanan Data</h4>
-								<h6>Kerahasiaan Data dijamin Aman</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!-- End App Features Section -->
-
 		<!-- ======= Frequently Asked Questions Section ======= -->
 		<section id="faq" class="bg-light py-5">
 			<div class="container">
 
 				<div class="text-center">
-					<h2 data-aos="fade-up">Frequently Asked Questions</h2>
+					<h3 data-aos="fade-up">Frequently Asked Questions</h3>
 					<h4 data-aos="fade-up" data-aos-delay="100">Daftar pertanyaan yang sering ditanyakan.</h4>
 				</div>
 				<br />
@@ -167,11 +170,11 @@
 						$i++;
 					?>
 						<div class="accordion-item">
-							<h2 class="accordion-header" id="heading<?= $faq->id; ?>">
+							<h3 class="accordion-header" id="heading<?= $faq->id; ?>">
 								<button class="accordion-button <?php echo ($i == 1 ? '' : 'collapsed'); ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $faq->id; ?>" aria-expanded="<?php echo ($i == 1 ? 'true' : 'false'); ?>" aria-controls="collapse<?= $faq->id; ?>">
 									<?= $faq->pertanyaan; ?>
 								</button>
-							</h2>
+							</h3>
 							<div id="collapse<?= $faq->id; ?>" class="accordion-collapse collapse <?php echo ($i == 1 ? 'show' : ''); ?>" aria-labelledby="heading<?= $faq->id; ?>" data-bs-parent="#accordion">
 								<div class="accordion-body">
 									<?= $faq->jawaban; ?>
@@ -187,7 +190,7 @@
 		<section id="contact" class="py-5 bg-gradient-light text-dark">
 			<div class="container">
 				<div class="text-center mb-5">
-					<h2 data-aos="fade-up">Hubungi Kami</h2>
+					<h3 data-aos="fade-up">Hubungi Kami</h3>
 					<h4 data-aos="fade-up" data-aos-delay="100">Anda dapat menghubungi kami melalui kontak atau media sosial kami.</h4>
 				</div>
 

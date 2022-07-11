@@ -6,8 +6,6 @@
     <div class="col-lg-6 d-flex align-items-center justify-content-center">
         <div class="auth-form-transparent text-left p-1">
             <div class="brand-logo">
-                <h3><?= $brand ?></h3>
-                <h2 class="mb-3"><?= $instansi ?></h2>
             </div>
             <h2 class="mb-3">Login</h2>
             <h5 class="fw-normal mb-3">Masuk untuk BerSedekah</h5>

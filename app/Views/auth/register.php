@@ -5,9 +5,9 @@
     <div class="col-lg-6 mx-auto">
         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
             <div class="brand-logo">
-                <h3 class="mb-3"><?= $brand ?></h3>
+                
             </div>
-            <h2 class="mb-3">Register Akun</h2>
+            <h2 class="mb-3">Register Pasukan Sedekan Receh</h2>
             <h5 class="fw-normal mb-3"></h5>
 
             <form action="<?= base_url(); ?>/auth/save_register" method="POST" enctype="multipart/form-data">
@@ -126,6 +126,13 @@
                             </div>
                         </div>
                         
+                    </div>
+                </div>
+                <div class="mb-3">
+                <label for="jenis" class="col-form-label">Jika kamu mendapat kesempatan untuk menyalurkan #sedekahreceh sejumlah 1jt, mau salurkan ke mana (untuk apa)?</label>
+                    <input type="text" class="form-control form-control-lg <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ''; ?>" name="keterangan" placeholder="Reason" value="<?= old('keterangan'); ?>">
+                    <div class="invalid-feedback">
+                        <?= $validation->getError('keterangan'); ?>
                     </div>
                 </div>
                 <div class="mb-3">

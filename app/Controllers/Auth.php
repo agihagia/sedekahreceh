@@ -157,6 +157,12 @@ class Auth extends BaseController
                     'required' => 'Field {field} harus diisi!',
                 ]
             ],
+            'keterangan' => [
+                'rules' => 'required|min_length[10]|max_length[150]',
+                'errors' => [
+                    'required' => 'Field {field} harus diisi!',
+                ]
+            ],
             'foto' => [
                 'rules' => 'max_size[foto,10240]|is_image[foto]|mime_in[foto,image/jpg,image/jpeg,image/png,image/svg]', //'uploaded[foto]| taruh dpn kalau mau ada error dan tdk pakai if(apakah tidak ada foto) 
                 'errors' => [
@@ -197,6 +203,7 @@ class Auth extends BaseController
             'telp' => $this->request->getVar('telp'),
             'instagram' => $this->request->getVar('instagram'),
             'telegram' => $this->request->getVar('telegram'),
+            'ket' => $this->request->getVar('keterangan'),
             'foto' => $namaFoto,
             'level' => 'user',
             'saldo' => '0',

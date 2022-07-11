@@ -60,7 +60,7 @@
 					<h4 class="fw-normal mb-3">Yang penting ISTIQOMAH</h4>
 					<h4 class="fw-normal mb-3">Eksekusi berjamaah, Meski seribu ajah</h4>
 					<br>
-					<a href="#" class="btn btn-outline-success"><i class="mdi mdi-account-check-outline"></i> Mulai Sedekah</a>
+					<a href="<?= base_url('login'); ?>" class="btn btn-outline-success"><i class="mdi mdi-account-check-outline"></i> Mulai Sedekah</a>
 					<!-- <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a> -->
 				</div>
 			</div>
@@ -76,6 +76,15 @@
 				</div>
 				<br />
 				<div class="row">
+					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="500">
+						<div class="card">
+							<div class="card-body">
+								<div class="text-start"><i class="mdi mdi-account-check mdi-48px text-info"></i></div>
+								<h4>Komunitas</h4>
+								<h6></h6>
+							</div>
+						</div>
+					</div>
 					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="200">
 						<div class="card mb-0">
 							<div class="card-body">
@@ -94,20 +103,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="500">
-						<div class="card">
-							<div class="card-body">
-								<div class="text-start"><i class="mdi mdi-account-check mdi-48px text-info"></i></div>
-								<h4>Komunitas</h4>
-								<h6></h6>
-							</div>
-						</div>
-					</div>
 					<div class="col-md-3 grid-margin stretch-card mb-0" data-aos="fade-up" data-aos-delay="300">
 						<div class="card">
 							<div class="card-body">
 								<div class="text-start"><i class="mdi mdi-target mdi-48px text-danger"></i></div>
-								<h4>Akurat</h4>
+								<h4>Transparansi</h4>
 								<h6></h6>
 							</div>
 						</div>

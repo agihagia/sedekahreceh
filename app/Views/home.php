@@ -191,7 +191,7 @@
 			<div class="container">
 				<div class="text-center mb-5">
 					<h3 data-aos="fade-up">Hubungi Kami</h3>
-					<h4 data-aos="fade-up" data-aos-delay="100">Anda dapat menghubungi kami melalui kontak atau media sosial kami.</h4>
+					<h4 data-aos="fade-up" data-aos-delay="100">hubungi kami melalui kontak atau media sosial kami.</h4>
 				</div>
 
 				<div class="row">

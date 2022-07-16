@@ -39,7 +39,6 @@ $routes->setAutoRoute(false);
 // route since we don't have to scan directories.
 
 // $routes->get('/', 'Home::index');
-
 $routes->get('/', 'Home::index');
 $routes->add('/home/loadmore', 'Home::loadMore');
 
@@ -120,7 +119,6 @@ $routes->group('', ['filter' => 'AuthFilters'], function ($routes) {
 	$routes->add('/backup/save', 'Backup::save');
 	$routes->delete('/backup/delete/(:num)', 'Backup::delete/$1');
 	$routes->add('/backup/refresh', 'Backup::refresh');
-
 });
 
 /*

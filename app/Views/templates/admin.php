@@ -104,12 +104,12 @@ $alamat = $setting->info['alamat_instansi'];
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url() ?>/transaksi">
                             <i class="menu-icon mdi mdi-swap-horizontal-bold mdi-24px"></i>
-                            <span class="menu-title">Transaksi</span></a>
+                            <span class="menu-title">Data Sedekah</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url() ?>/datasedekah">
                             <i class="menu-icon mdi mdi-delete-variant mdi-24px"></i>
-                            <span class="menu-title">sedekah</span></a>
+                            <span class="menu-title">Realisasi Sedekah</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url() ?>/akun">
@@ -132,6 +132,16 @@ $alamat = $setting->info['alamat_instansi'];
                             <span class="menu-title">Backup DB</span></a>
                     </li>
                 <?php endif; ?>
+
+                <li class="nav-item sidebar-category">
+                    <p>Sedekah</p>
+                    <span></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url() ?>/transaksi/setor/<?= session()->get('id') ?>">
+                        <i class="menu-icon mdi mdi-heart mdi-24px"></i>
+                        <span class="menu-title">Sedekah</span></a>
+                </li>
 
                 <li class="nav-item sidebar-category">
                     <p>User Profile</p>

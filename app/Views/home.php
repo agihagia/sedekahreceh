@@ -68,10 +68,10 @@
 	</section><!-- End Hero -->
 
 	<main id="main">
-				<!-- ======= Tujuan Section ======= -->
-				<section id="tujuan" class="py-4">
+		<!-- ======= Tujuan Section ======= -->
+		<section id="tujuan" class="py-4">
 			<div class="container">
-			<div class="text-center">
+				<div class="text-center">
 					<h1>Sedekah Receh</h1>
 				</div>
 				<br />
@@ -81,7 +81,7 @@
 							<div class="card-body">
 								<div class="text-start"><i class="mdi mdi-account-check mdi-48px text-info"></i></div>
 								<h4>Komunitas</h4>
-								<h6></h6>
+								<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</h6>
 							</div>
 						</div>
 					</div>
@@ -90,7 +90,7 @@
 							<div class="card-body">
 								<div class="text-start"><i class="mdi mdi-heart mdi-48px text-success"></i></div>
 								<h4>Berbagi</h4>
-								<h6></h6>
+								<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</h6>
 							</div>
 						</div>
 					</div>
@@ -98,8 +98,8 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="text-start"><i class="mdi mdi-elevation-rise mdi-48px text-warning"></i></div>
-								<h4>Konsistensi</h4>
-								<h6></h6>
+								<h4>Tertarget</h4>
+								<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</h6>
 							</div>
 						</div>
 					</div>
@@ -108,7 +108,7 @@
 							<div class="card-body">
 								<div class="text-start"><i class="mdi mdi-target mdi-48px text-danger"></i></div>
 								<h4>Transparansi</h4>
-								<h6></h6>
+								<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</h6>
 							</div>
 						</div>
 					</div>
@@ -199,14 +199,15 @@
 						<h4>Kontak</h4>
 						<h6>Telp: <?= $telpon; ?> (WhatsApp)</h6>
 						<h6>Email: <?= $email; ?></h6>
-						<h6>Telegram: sedekahreceh <li class="list-inline-item"><a href="https://t.me/sedekahreceh" class="twitter"><i class="mdi mdi-telegram text-telegram icon-md"></i></a></li></h6>
+						<h6>Telegram: sedekahreceh <li class="list-inline-item"><a href="https://t.me/sedekahreceh" class="twitter"><i class="mdi mdi-telegram text-telegram icon-md"></i></a></li>
+						</h6>
 						<ul class="list-inline">
 							<li class="list-inline-item">
 								<p class="lead">Follow Social Media:</p>
 							</li>
-							
+
 							<li class="list-inline-item"><a href="https://www.instagram.com/sedekahrecehofficial/" class="instagram"><i class="mdi mdi-instagram text-danger icon-md"></i></a></li>
-							
+
 							<!--li class="list-inline-item"><a href="#" class="facebook"><i class="mdi mdi-facebook text-facebook icon-md"></i></a></!--li>
 							<li-- class="list-inline-item"><a href="#" class="google-plus"><i class="mdi mdi-youtube text-youtube icon-md"></i></a></li-->
 						</ul>

@@ -1,6 +1,6 @@
 <?= $this->extend('templates/admin'); ?>
 <?= $this->section('content') ?>
-<h1 class="h2 mb-3">Form Setor sedekah</h1>
+<h1 class="h2 mb-3">Form sedekah</h1>
 <div class="card">
     <div class="card-header">
         <a href="<?= base_url('akun'); ?>" class="btn"><i class="fas fa-arrow-left"></i> &nbsp;Kembali</a>

@@ -197,16 +197,20 @@
 				<div class="row">
 					<div class="col-md-7">
 						<h4>Kontak</h4>
-						<h6>Telp: <?= $telpon; ?> (WhatsApp)</h6>
-						<h6>Email: <?= $email; ?></h6>
-						<h6>Telegram: sedekahreceh <li class="list-inline-item"><a href="https://t.me/sedekahreceh" class="twitter"><i class="mdi mdi-telegram text-telegram icon-md"></i></a></li>
+						<h6>Telegram: @sedekahreceh <li class="list-inline-item"><a href="https://t.me/sedekahreceh" class="twitter"><i class="mdi mdi-telegram text-telegram icon-md"></i></a></li>
 						</h6>
+						<!--h6>Telp: <?= $telpon; ?> (WhatsApp)</h6-->
+						<h6>Email: <?= $email; ?></h6>
 						<ul class="list-inline">
 							<li class="list-inline-item">
-								<p class="lead">Follow Social Media:</p>
+								<p class="lead">Follow Social Media: </p>
 							</li>
-
-							<li class="list-inline-item"><a href="https://www.instagram.com/sedekahrecehofficial/" class="instagram"><i class="mdi mdi-instagram text-danger icon-md"></i></a></li>
+							<br>
+							<li class="list-inline-item">
+								<a href="https://www.instagram.com/sedekahrecehofficial/" class="instagram">
+									<i class="mdi mdi-instagram text-danger icon-md"></i></a>
+								<h6>@sedekahrecehofficial</h6>
+							</li>
 
 							<!--li class="list-inline-item"><a href="#" class="facebook"><i class="mdi mdi-facebook text-facebook icon-md"></i></a></!--li>
 							<li-- class="list-inline-item"><a href="#" class="google-plus"><i class="mdi mdi-youtube text-youtube icon-md"></i></a></li-->

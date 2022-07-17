@@ -2,11 +2,9 @@
 
 namespace App\Controllers;
 
-
-
 use App\Libraries\Settings;
-use App\Models\FaqModel;
 use App\Models\sedekahModel;
+use App\Models\FaqModel;
 
 class Home extends BaseController
 {
@@ -24,9 +22,9 @@ class Home extends BaseController
 		$data = [
 			'appname' => $this->setting->info['app_name'],
 			'sitetitle' => 'Home | ' . $this->setting->info['site_title'],
-            'brand' => $this->setting->info['site_title']." v".$this->setting->info['app_version'],
-            'instansi' => $this->setting->info['nama_instansi'],
-            'alamat' => $this->setting->info['alamat_instansi'],
+			'brand' => $this->setting->info['site_title'] . " v" . $this->setting->info['app_version'],
+			'instansi' => $this->setting->info['nama_instansi'],
+			'alamat' => $this->setting->info['alamat_instansi'],
 			'telpon' => $this->setting->info['telp_instansi'],
 			'email' => $this->setting->info['email_instansi'],
 			'maps' => $this->setting->info['maps_instansi'],
@@ -37,24 +35,24 @@ class Home extends BaseController
 	}
 
 	public function loadMore()
-    {
-        if ($this->request->getVar('id')) {
-            $csrfName = csrf_token();
-            $csrfHash = csrf_hash();
+	{
+		if ($this->request->getVar('id')) {
+			$csrfName = csrf_token();
+			$csrfHash = csrf_hash();
 
-            $showLimit = 4;
-            $id = $this->request->getVar('id');
+			$showLimit = 4;
+			$id = $this->request->getVar('id');
 
-            $totalRowCount = $this->sedekahModel->countLoadmoresedekah($id);
-            $sedekah = $this->sedekahModel->loadmoresedekah($id, $showLimit);
+			$totalRowCount = $this->sedekahModel->countLoadmoresedekah($id);
+			$sedekah = $this->sedekahModel->loadmoresedekah($id, $showLimit);
 
-            $data = [
-                'total' => $totalRowCount,
-                'limit' => $showLimit,
-                'jenissedekah' => $sedekah
-            ];
-            $data[$csrfName] = $csrfHash;
-            return view('load_more', $data);
-        }
-    }
+			$data = [
+				'total' => $totalRowCount,
+				'limit' => $showLimit,
+				'jenissedekah' => $sedekah
+			];
+			$data[$csrfName] = $csrfHash;
+			return view('load_more', $data);
+		}
+	}
 }

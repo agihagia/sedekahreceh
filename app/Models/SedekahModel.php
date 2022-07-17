@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class sedekahModel extends Model
+class SedekahModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'realisasi';

@@ -3,14 +3,14 @@
 namespace App\Controllers;
 
 use App\Libraries\Settings;
-use App\Models\sedekahModel;
+use App\Models\SedekahModel;
 use App\Models\FaqModel;
 
 class Home extends BaseController
 {
 	public function __construct()
 	{
-		$this->sedekahModel = new sedekahModel();
+		$this->sedekahModel = new SedekahModel();
 		$this->setting = new Settings();
 		$this->faqModel = new FaqModel();
 	}
@@ -43,8 +43,8 @@ class Home extends BaseController
 			$showLimit = 4;
 			$id = $this->request->getVar('id');
 
-			$totalRowCount = $this->sedekahModel->countLoadmoresedekah($id);
-			$sedekah = $this->sedekahModel->loadmoresedekah($id, $showLimit);
+			$totalRowCount = $this->SedekahModel->countLoadmoresedekah($id);
+			$sedekah = $this->SedekahModel->loadmoresedekah($id, $showLimit);
 
 			$data = [
 				'total' => $totalRowCount,

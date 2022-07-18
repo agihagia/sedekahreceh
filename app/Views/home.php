@@ -262,7 +262,7 @@
 				$('.loding').show();
 				$.ajax({
 					type: 'POST',
-					url: baseUrl + '/home/loadmore',
+					url: baseUrl + '/home/loadMore',
 					data: {
 						id: ID,
 						[csrfName]: csrfHash

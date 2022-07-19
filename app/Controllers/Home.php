@@ -28,13 +28,15 @@ class Home extends BaseController
 			'telpon' => $this->setting->info['telp_instansi'],
 			'email' => $this->setting->info['email_instansi'],
 			'maps' => $this->setting->info['maps_instansi'],
+			'instagram' => $this->setting->info['instagram'],
+			'instagram2' => $this->setting->info['instagram2'],
 			'jenissedekah' => $this->sedekahModel->loadmoresedekah('', $showLimit),
 			'faqs' => $this->faqModel->asObject()->findAll(),
 		];
 		return view('home', $data);
 	}
 
-	public function loadMore()
+	public function loadmore()
 	{
 		if ($this->request->getVar('id')) {
 			$csrfName = csrf_token();

@@ -98,7 +98,7 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="text-start"><i class="mdi mdi-elevation-rise mdi-48px text-warning"></i></div>
-								<h4>Tertarget</h4>
+								<h4>Konsitensi</h4>
 								<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</h6>
 							</div>
 						</div>
@@ -107,7 +107,7 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="text-start"><i class="mdi mdi-target mdi-48px text-danger"></i></div>
-								<h4>Transparansi</h4>
+								<h4>Tertarget</h4>
 								<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</h6>
 							</div>
 						</div>
@@ -195,12 +195,12 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-md-4">
 						<h4>Kontak</h4>
 						<h6>Telegram: @sedekahreceh <li class="list-inline-item"><a href="https://t.me/sedekahreceh" class="twitter"><i class="mdi mdi-telegram text-telegram icon-md"></i></a></li>
 						</h6>
 						<!--h6>Telp: <?= $telpon; ?> (WhatsApp)</h6-->
-						<h6>Email: <?= $email; ?></h6>
+						<!--h6>Email: <?= $email; ?></h6-->
 						<ul class="list-inline">
 							<li class="list-inline-item">
 								<p class="lead">Follow Social Media: </p>
@@ -216,6 +216,16 @@
 							<li-- class="list-inline-item"><a href="#" class="google-plus"><i class="mdi mdi-youtube text-youtube icon-md"></i></a></li-->
 						</ul>
 					</div>
+					<div class="col-md-3 mb-3">
+						<div class="instagram-feed">
+						<?= $instagram; ?>
+						</div>
+					</div>
+					<!--div class="col-md-3 mb-3">
+						<div class="instagram-feed">
+						<?= $instagram2; ?>
+						</div>
+					</div-->
 					<!--div class="col-md-5 mb-3">
 						<div class="google-maps">
 							<?= $maps; ?>
@@ -262,7 +272,7 @@
 				$('.loding').show();
 				$.ajax({
 					type: 'POST',
-					url: baseUrl + '/home/loadMore',
+					url: baseUrl + '/home/loadmore',
 					data: {
 						id: ID,
 						[csrfName]: csrfHash

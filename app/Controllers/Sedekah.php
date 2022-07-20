@@ -6,7 +6,7 @@ namespace App\Controllers;
 
 use App\Models\AuthModel;
 use App\Models\SedekahModel;
-use App\Models\sedekahDataModel;
+use App\Models\SedekahDataModel;
 use Config\Services;
 
 class sedekah extends BaseController

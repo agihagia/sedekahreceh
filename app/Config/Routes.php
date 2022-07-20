@@ -66,7 +66,7 @@ $routes->group('', ['filter' => 'AuthFilters'], function ($routes) {
 	$routes->add('/transaksi/listdata', 'Transaksi::listData');
 	$routes->post('/transaksi/proses_penarikan', 'Transaksi::prosesPenarikan');
 
-	$routes->get('/datasedekah', 'sedekah::index');
+	$routes->get('/datasedekah', 'Sedekah::index');
 	$routes->get('/sedekah/create', 'sedekah::create');
 	$routes->post('/sedekah/save', 'sedekah::save');
 	$routes->get('/sedekah/edit/(:segment)', 'sedekah::edit/$1');

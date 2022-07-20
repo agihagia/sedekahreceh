@@ -5,7 +5,7 @@ namespace App\Controllers;
 
 
 use App\Models\AuthModel;
-use App\Models\sedekahModel;
+use App\Models\SedekahModel;
 use App\Models\sedekahDataModel;
 use Config\Services;
 
@@ -15,7 +15,7 @@ class sedekah extends BaseController
 
     public function __construct()
     {
-        $this->sedekahModel = new sedekahModel();
+        $this->sedekahModel = new SedekahModel();
         $this->authModel = new AuthModel();
     }
 

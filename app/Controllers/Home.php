@@ -45,8 +45,8 @@ class Home extends BaseController
 			$showLimit = 4;
 			$id = $this->request->getVar('id');
 
-			$totalRowCount = $this->SedekahModel->countLoadmoresedekah($id);
-			$sedekah = $this->SedekahModel->loadmoresedekah($id, $showLimit);
+			$totalRowCount = $this->sedekahModel->countLoadmoresedekah($id);
+			$sedekah = $this->sedekahModel->loadmoresedekah($id, $showLimit);
 
 			$data = [
 				'total' => $totalRowCount,

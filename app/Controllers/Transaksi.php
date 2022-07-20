@@ -5,7 +5,7 @@ namespace App\Controllers;
 
 
 use App\Models\AuthModel;
-use App\Models\sedekahModel;
+use App\Models\sedekahModel; 
 use App\Models\TransaksiModel;
 use App\Models\DetailTransaksiModel;
 use App\Models\TransaksiDataModel;
@@ -24,7 +24,7 @@ class Transaksi extends BaseController
     public function __construct()
     {
         $this->authModel = new AuthModel();
-        $this->sedekahModel = new sedekahModel();
+        $this->sedekahModel = new SedekahModel();
         $this->transaksiModel = new TransaksiModel();
         $this->detailModel = new DetailTransaksiModel();
         $this->setting = new Settings();

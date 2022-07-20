@@ -67,13 +67,13 @@ $routes->group('', ['filter' => 'AuthFilters'], function ($routes) {
 	$routes->post('/transaksi/proses_penarikan', 'Transaksi::prosesPenarikan');
 
 	$routes->get('/datasedekah', 'Sedekah::index');
-	$routes->get('/sedekah/create', 'sedekah::create');
-	$routes->post('/sedekah/save', 'sedekah::save');
-	$routes->get('/sedekah/edit/(:segment)', 'sedekah::edit/$1');
-	$routes->post('/sedekah/update/(:segment)', 'sedekah::update/$1');
-	$routes->delete('/sedekah/delete/(:num)', 'sedekah::delete/$1');
-	$routes->get('/sedekah/detail/(:any)', 'sedekah::detail/$1');
-	$routes->add('/sedekah/listdata', 'sedekah::listData');
+	$routes->get('/sedekah/create', 'Sedekah::create');
+	$routes->post('/sedekah/save', 'Sedekah::save');
+	$routes->get('/sedekah/edit/(:segment)', 'Sedekah::edit/$1');
+	$routes->post('/sedekah/update/(:segment)', 'Sedekah::update/$1');
+	$routes->delete('/sedekah/delete/(:num)', 'Sedekah::delete/$1');
+	$routes->get('/sedekah/detail/(:any)', 'Sedekah::detail/$1');
+	$routes->add('/sedekah/listdata', 'Sedekah::listData');
 
 	$routes->get('/user', 'User::index');
 	$routes->add('/user/loadmore', 'User::loadMore');
